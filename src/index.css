@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* React Flow Dark Mode Overrides */
+.react-flow__edge-path {
+  stroke: #555;
+  stroke-width: 2;
+}
+
+.react-flow__handle {
+  width: 10px;
+  height: 10px;
+  background: #3b82f6;
+  border: 2px solid #1e1e1e;
+}
+
+.react-flow__controls {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.react-flow__controls-button {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
+  color: #9ca3af;
+}
+
+.react-flow__controls-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.react-flow__controls-button:last-child {
+  border-bottom: none;
+}
+
+.react-flow__attribution {
+  background: rgba(30, 30, 30, 0.5);
+  color: #666;
+}
