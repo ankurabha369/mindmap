@@ -1,5 +1,0 @@
-{
-  "name": "FlowMind",
-  "description": "A visual flow chart and mind map creation tool designed for rapid note-taking. Features editable nodes with text and image support, custom alignments, and intuitive Ctrl+Drag interaction for creating connected topics.",
-  "requestFramePermissions": []
-}
