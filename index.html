@@ -1,14 +1,30 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/x-icon" href="/mindmap/assets/favicon-dzN0BT7M.ico" />
-    <link rel="apple-touch-icon" href="/mindmap/assets/apple-touch-icon-DFeLnbG7.png" />
-    <link rel="manifest" href="/mindmap/assets/site-BwHFeIBa.webmanifest" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FlowMind</title>
-    <script type="module" crossorigin src="/mindmap/assets/index-B5s4Yna7.js"></script>
-    <link rel="stylesheet" crossorigin href="/mindmap/assets/index-DQrR8ARB.css">
+    <link rel="manifest" href="/manifest.json" />
+    <title>Flow Mind</title>
+    <script>
+      window.addEventListener('error', (e) => {
+        if (e.message === 'ResizeObserver loop completed with undelivered notifications.') {
+          const resizeObserverErrDiv = document.getElementById(
+            'webpack-dev-server-client-overlay-div'
+          );
+          const resizeObserverErr = document.getElementById(
+            'webpack-dev-server-client-overlay'
+          );
+          if (resizeObserverErr) {
+            resizeObserverErr.setAttribute('style', 'display: none');
+          }
+          if (resizeObserverErrDiv) {
+            resizeObserverErrDiv.setAttribute('style', 'display: none');
+          }
+        }
+      });
+    </script>
+    <script type="module" crossorigin src="/assets/index-Co_r7pbx.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D_7witSs.css">
   </head>
   <body>
     <div id="root"></div>
